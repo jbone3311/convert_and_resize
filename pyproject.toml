@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "code-image-resizing"
+version = "2.0.0"
+description = "\\"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.38.0"
+pillow = "^10.4.0"
+glob2 = "^0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,5 +1,7 @@
 ''' Create a executable file from this script using the following command: 
-    pyinstaller --onefile --noconsole jBone_convert_and_resizeV2_0.exe 
+    pyinstaller --onefile --noconsole convert_and_resizeV2_0.py
+    pyinstaller --onefile --collect-all streamlit --exclude-module torch --exclude-module torchaudio --exclude-module transformers --exclude-module tensorboard --exclude-module avutil --exclude-module avformat --exclude-module avcodec --exclude-module avdevice --exclude-module avfilter --exclude-module c10_cuda --exclude-module torch_cuda convert_and_resizeV2_0.py
+
     streamlit run convert_and_resizeV2_0.py
     https://github.com/jbone3311/convert_and_resize.git 
 '''
