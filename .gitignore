@@ -1,9 +1,10 @@
 # Ignore all PNG files in the current directory
 *.png
 
-# Ignore the entire OUTPUT directory
+# Ignore the entire directory
 /OUTPUT/
-
+/dist/
+/build/
 # Ignore the entire BAK directory
 /BAK/
 
