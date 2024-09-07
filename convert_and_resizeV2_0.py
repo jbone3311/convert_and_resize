@@ -1,8 +1,3 @@
-''' Create a executable file from this script using the following command: 
-    pyinstaller --onefile --noconsole Convert_and_Resize_512.py
-streamlit run convert_and_resizeV2_0.py 
-'''
-
 import os
 import streamlit as st
 from PIL import Image
