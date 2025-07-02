@@ -1,0 +1,7 @@
+# Image Converter and Resizer - Requirements
+# For Poetry users, use: poetry install
+# For pip users, use: pip install -r requirements.txt
+
+streamlit>=1.38.0,<2.0.0
+Pillow>=10.4.0,<11.0.0
+glob2>=0.7,<1.0
