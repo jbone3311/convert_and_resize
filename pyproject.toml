@@ -1,9 +1,22 @@
 [tool.poetry]
-name = "code-image-resizing"
+name = "image-converter-resizer"
 version = "2.0.0"
-description = "\\"
-authors = ["Your Name <you@example.com>"]
+description = "A professional Streamlit application for converting and resizing images with support for multiple formats including HEIC"
+authors = ["jBone <jbone3311@users.noreply.github.com>"]
 readme = "README.md"
+homepage = "https://github.com/jbone3311/image-converter-resizer"
+repository = "https://github.com/jbone3311/image-converter-resizer"
+keywords = ["image", "converter", "resizer", "streamlit", "photo", "heic"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+]
 package-mode = false
 
 [tool.poetry.dependencies]
@@ -12,7 +25,36 @@ streamlit = "^1.38.0"
 pillow = "^10.4.0"
 glob2 = "^0.7"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+flake8-docstrings = "^1.7.0"
+mypy = "^1.5.0"
+pre-commit = "^3.4.0"
+safety = "^2.3.0"
+bandit = "^1.7.0"
+types-pillow = "^10.0.0"
+
+[tool.poetry.scripts]
+image-converter = "src.main:main"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
